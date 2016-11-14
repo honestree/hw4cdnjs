@@ -2,6 +2,28 @@
 #include <stdlib.h>
 
 int main(){
-    printf("hello world");
-
+   int count, ten, unit;
+   for( count = 0 ; count < 100 ; count++ ){
+   	ten = count / 10;
+	unit = count % 10;
+	if( ten * unit == 0 ){
+		if( ten == 0 ){
+			printf(" %d ", unit ); 
+		}
+		else
+			printf(" %d ", ten );
+	}
+	else{
+		if( ten * unit < 10 ){
+			printf(" %d ", unit * ten );
+		}
+		else{
+			printf("%d ", unit *ten );
+	
+		}
+	}
+	if( unit == 9 ){
+		printf("\n");
+	}
+   }
 }
