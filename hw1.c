@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 int main(){
-   int count, ten, unit;
-   for( count = 0 ; count < 100 ; count++ ){
+   int count = 0, ten, unit;
+   while( count < 100 ){
    	ten = count / 10;
 	unit = count % 10;
 	if( ten * unit == 0 ){
@@ -25,5 +25,6 @@ int main(){
 	if( unit == 9 ){
 		printf("\n");
 	}
+   	++count;
    }
 }
